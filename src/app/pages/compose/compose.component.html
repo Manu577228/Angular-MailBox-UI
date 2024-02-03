@@ -1,13 +1,13 @@
-<div class="grid grid-cols-4 gap-6">
-  <div class="">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+  <div class="md:col-span-1">
     <app-sidebar></app-sidebar>
   </div>
-  <div class="col-span-3">
-    <app-card>
-      <card-title>
+  <div class="md:col-span-3">
+    <app-card class="md:flex md:flex-col">
+      <card-title class="bg-purple-600 text-white py-2 px-4 rounded-t-lg">
         <h4 class="text-lg font-bold">Compose Message</h4>
       </card-title>
-      <card-body>
+      <card-body class="p-4">
         <form action="">
           <div class="form-group mb-3">
             <label for="" class="form-label">To <span>*</span></label>
@@ -39,9 +39,10 @@
               placeholder="Message"
             ></textarea>
           </div>
-          <button type="submit" class="btn btn-purple">Send Message</button>
+          <button type="submit" class="btn btn-purple w-full">Send Message</button>
         </form>
       </card-body>
     </app-card>
   </div>
-</div>
+  </div>
+  
